@@ -8,10 +8,12 @@ import Heatmap from './charts/Heatmap';
 import HorizontalBarChart from './charts/HorizontalBarChart';
 import LineChart from './charts/LineChart';
 import MultilineChart from './charts/MultilineChart';
-import PieChart from './charts/PieChart'; // Remove this duplicate import
+import PieChart from './charts/PieChart';
 import ScatterPlot from './charts/ScatterPlot';
 import TreeMap from './charts/TreeMap';
 import VerticalBarChart from './charts/VerticalBarChart';
+import WordCloud from './charts/WordCloud';
+import RadarChart from './charts/RadarChart';
 
 function App() {
   return (
@@ -51,6 +53,12 @@ function App() {
                 <Link to="/scatter-plot">Scatter Plot</Link>
               </li>
               <li>
+                <Link to="/radar-chart">Radar Chart</Link>
+              </li>
+              <li>
+                <Link to="/word-cloud">Word Cloud</Link>
+              </li>
+              <li>
                 <Link to="/tree-map">Tree Map</Link>
               </li>
               <li>
@@ -73,6 +81,8 @@ function App() {
             <Route path="/multiline-chart" element={<MultilineChart />} />
             <Route path="/scatter-plot" element={<ScatterPlot />} />
             <Route path="/tree-map" element={<TreeMap />} />
+            <Route path="/radar-chart" element={<RadarChart />} />
+            <Route path="/word-cloud" element={<WordCloud />} />
             <Route path="/vertical-bar-chart" element={<VerticalBarChart />} />
           </Routes>
         </div>

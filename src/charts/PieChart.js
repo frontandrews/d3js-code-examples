@@ -15,7 +15,6 @@ const PieChart = () => {
         const height = 400;
         const radius = Math.min(width, height) / 2;
 
-        // Create an SVG element for the pie chart
         const svg = d3.select("#pieChart")
             .append("g")
             .attr("transform", `translate(${width / 2}, ${height / 2})`);

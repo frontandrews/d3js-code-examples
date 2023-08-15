@@ -15,7 +15,7 @@ const Heatmap = () => {
     const height = 400;
 
     const colorScale = d3.scaleSequential(d3.interpolateViridis)
-      .domain([d3.min(data.flat()), d3.max(data.flat())]); // Customize the color domain
+      .domain([d3.min(data.flat()), d3.max(data.flat())]);
 
     const svg = d3.select("#heatmap")
       .append("svg")
